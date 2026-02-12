@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Cosmic Powers - 宇宙謎</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="phase-target" class="phase-target" role="status" aria-live="polite">Make 10</div>
+
+        <main role="main">
+            <div class="calculator-section">
+                    <div class="calculator" role="application">
+                        <div class="region-section">
+                            <button id="region-btn" 
+                                    class="region-btn locked" 
+                                    aria-disabled="true"
+                                    tabindex="0">
+                                <div class="lock-icon" aria-hidden="true">🔒</div>
+                                <div class="region-icon" aria-hidden="true"></div>
+                            </button>
+                        </div>
+                        
+                        <div class="main-calculator" role="group">
+                            <div class="number-input" 
+                                 id="number1-display" 
+                                 role="button"
+                                 tabindex="0"></div>
+                            <button id="operator-btn" 
+                                    class="operator-btn locked"
+                                    aria-disabled="true"
+                                    tabindex="0">
+                                <div class="lock-icon" aria-hidden="true">🔒</div>
+                                <span class="operator-symbol">+</span>
+                            </button>
+                            <div class="number-input" 
+                                 id="number2-display"
+                                 role="button"
+                                 tabindex="0"></div>
+                            <button id="calculate-btn" 
+                                    class="equals-btn"
+                                    tabindex="0">=</button>
+                            <div class="result-display" 
+                                 id="result-display"
+                                 role="status"
+                                 aria-live="assertive"
+                                 ></div>
+                        </div>
+                        
+                        <div class="number-buttons" role="group">
+                            <button class="number-btn" data-number="1" tabindex="0">1</button>
+                            <button class="number-btn" data-number="2" tabindex="0">2</button>
+                            <button class="number-btn" data-number="3" tabindex="0">3</button>
+                            <button class="number-btn" data-number="4" tabindex="0">4</button>
+                            <button class="number-btn" data-number="5" tabindex="0">5</button>
+                        </div>
+                    </div>
+                </div>
+
+        </main>
+    </div>
+
+    <script src="data.min.js"></script>
+    <script src="r-data.min.js"></script>
+    <script src="data-api.min.js"></script>
+    <script src="game.min.js"></script>
+</body>
+</html>
